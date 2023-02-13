@@ -1,0 +1,21 @@
+
+# dependencies
+/node_modules
+/npm-debug.log*
+/pnpm-debug.log*
+/yarn-error.log
+/yarn.lock
+/package-lock.json
+
+# production
+/docs/.vitepress/cache
+/docs/.vitepress/dist
+
+
+# misc
+.DS_Store
+
+# ide
+/.vscode
+/.idea
+

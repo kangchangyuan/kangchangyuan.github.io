@@ -1,9 +1,12 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  base:'./',
+  lastUpdated:true,
   themeConfig:{
     logo:'/logo.svg',
-    siteTitle:'Notes'
+    siteTitle:'Notes',
+    footer:{
+      copyright:'Copyright © 20123-present'
+    }
   }
 })

@@ -4,7 +4,6 @@
 /npm-debug.log*
 /pnpm-debug.log*
 /yarn-error.log
-/yarn.lock
 /package-lock.json
 
 # production

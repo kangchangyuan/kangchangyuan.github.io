@@ -1,0 +1,4 @@
+## GIT 
+```bsh
+git init
+```

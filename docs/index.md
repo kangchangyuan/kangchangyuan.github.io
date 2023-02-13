@@ -6,7 +6,7 @@ hero:
   text: Notes & Documents
   tagline: Because I believe , I see
   image:
-    src: /public/logo.svg
+    src: ./public/logo.svg
     alt: logo
   actions:
     - theme: brand

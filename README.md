@@ -1,3 +1,5 @@
 # kangchangyuan.github.io
-This is Personal notes website。
-![吉祥物](./docs/public/logo.svg "logo")
+
+![吉祥物](./docs/logo.svg "logo")
+
+## This is Personal notes website。

@@ -41,6 +41,14 @@ git pull origin master
 git pull --all
 ```
 
+### 提交
+commit 提交规范 feat(新功能)、fix、docs、style、refactor(重构)、test、chore
+```bash
+# 加入到暂存区 .代表所有的变动到加入暂存区中
+git add .
+# git commit 
+```
+
 ### 拉取
 
 ```bash
@@ -91,6 +99,8 @@ git merge
 git push
 # 强制代码推送覆盖
 git push -f
+# 新分支第一次推送到远程
+git push --set-upstream origin [branchName]
 ```
 
 ### 暂存

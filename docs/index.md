@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get View
-      link: /Notes/git
+      link: /Notes/Git
     - theme: alt
       text: view on GitHub
       link: https://github.com/kangchangyuan

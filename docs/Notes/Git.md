@@ -1,4 +1,4 @@
-# Git Notes
+# Git Note
 
 ### 信息配置
 

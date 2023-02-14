@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  lastUpdated:true,
+  // lastUpdated:true,
   title:'PENGUIN',
   head:[
     ['link',{ rel: 'shortcut icon',type: 'image/x-icon', href: '/logo.svg' }]
@@ -10,7 +10,7 @@ export default defineConfig({
     logo:'/logo.svg',
     siteTitle:'Notes',
     nav:[
-      {text:'Notes',link:'/Notes/Git'},
+      {text:'Notes',link:'/Notes/Git',activeMatch:'/Notes/'},
       {text:'Frontend',
         items:[
           {text:'TypeScript',link:'/Frontend/TypeScript'},
@@ -23,8 +23,14 @@ export default defineConfig({
           {text:'SQL',link:'/Backend/SQL'},
         ]
       },
-      {text:'Backend',link:'/Backend/'}
     ],
+    sidebar:{
+      '/Notes/':[
+        {text:'Git Note',link:'/Notes/Git'},
+        {text:'JavaScript Note',link:'/Notes/JavaScript'},
+        {text:'SSH KEY',link:'/Notes/SSHKEY'},
+      ]
+    },
     outline:3
   }
 })

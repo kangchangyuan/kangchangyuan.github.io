@@ -15,14 +15,15 @@ hero:
     - theme: alt
       text: view on GitHub
       link: https://github.com/kangchangyuan
+      
 features:
   - icon: 📓
     title: Notes
     details: Personal Notes
   - icon: 🛸
     title: Frontend
-    details: Ts、Js、vue、uniapp
+    details: Ts、Js、Vue、uniapp
   - icon: 🏗️
     title: Backend
-    details: nodejs、express、mysql
+    details: Express、MySQL、SQL
 ---

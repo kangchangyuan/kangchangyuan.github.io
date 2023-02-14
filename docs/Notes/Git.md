@@ -1,4 +1,4 @@
-# Git 
+# Git Notes
 
 ### 信息配置
 
@@ -86,6 +86,12 @@ git checkout [branch]
 git branch -m [newName]
 ```
 
+- 分支关联
+本地和远程分支关联
+```bash
+git branch --set-upstream-to localBranch origin/remoteBranch 
+```
+
 ### 合并
 
 ```bash
@@ -118,6 +124,33 @@ git stash list
 ### 撤销
 
 ```bash
-# 撤销当前修改
-git reset --hard
+# 查看历史提交记录
+git log
+# 查看历史命令
+git reflog
+# 移动到提交到的位置
+git reset --hard commitId
+```
+
+### 实例
+
+- 本地*没有*代码
+```bash
+# 直接clone远程仓库
+git clone [url]
+git add .
+git commit -m 'message'
+git push
+```
+
+- 本地*有*代码
+```bash
+# 初始化仓库
+git init 
+git add .
+git commit -m 'message'
+# 关联远程仓库地址
+git remote add origin [remoteUrl]
+# 推送代码并且本地同名分支和远程分支绑定，下次直接在master 分支上就能直接push
+git push -u origin master
 ```

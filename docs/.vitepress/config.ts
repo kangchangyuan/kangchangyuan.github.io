@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  // lastUpdated:true,
+  lastUpdated:true,
   title:'PENGUIN',
   head:[
     ['link',{ rel: 'shortcut icon',type: 'image/x-icon', href: '/logo.svg' }]

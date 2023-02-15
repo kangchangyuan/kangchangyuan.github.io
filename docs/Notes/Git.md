@@ -65,6 +65,8 @@ git pull
 git branch
 # 列出所有的远程分支和本地分支
 git branch -a
+# 刷新本地仓库与远程仓库，可以除去已经删除的远程分支
+git remote prune origin
 ```
 
 - 分支新建
@@ -153,4 +155,14 @@ git commit -m 'message'
 git remote add origin [remoteUrl]
 # 推送代码并且本地同名分支和远程分支绑定，下次直接在master 分支上就能直接push
 git push -u origin master
+```
+
+### 合并请求
+
+使用命令创建合并请求在coding平台使用，开发分支不需要推送到远程仓库
+```bash
+git add 
+git commit
+# 固定格式，不需要写合并请求的标题，推送到远端会生成 mr/target-branch/local-branch 分支
+git push origin local-branch:mr/target-branch/local-branch
 ```

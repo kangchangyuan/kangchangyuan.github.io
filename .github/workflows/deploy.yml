@@ -21,7 +21,8 @@ jobs:
         with:
           node-version: 16
           cache: npm
-      - run: npm install --frozen-lockfile
+      - run: npm install -g pnpm
+      - run: pnpm install 
       - name: Build
         run: npm docs:build
       - uses: actions/configure-pages@v2

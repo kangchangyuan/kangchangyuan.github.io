@@ -29,6 +29,7 @@ export default defineConfig({
         {text:'Git Note',link:'/Notes/Git'},
         {text:'JavaScript Note',link:'/Notes/JavaScript'},
         {text:'SSH KEY',link:'/Notes/SSHKEY'},
+        {text:'Ubuntu',link:'/Notes/Ubuntu'},
       ]
     },
     outline:3

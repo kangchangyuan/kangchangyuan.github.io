@@ -86,6 +86,10 @@ git branch -D [branchName]
 ```bash
 git checkout [branch]
 git branch -m [newName]
+# 远程分支重命名
+git push -d origin branch
+git push origin newName
+git branch --set-upstream-to origin/newName
 ```
 
 - 分支关联
@@ -165,4 +169,11 @@ git add
 git commit
 # 固定格式，不需要写合并请求的标题，推送到远端会生成 mr/target-branch/local-branch 分支
 git push origin local-branch:mr/target-branch/local-branch
+```
+
+### 重新关联
+
+远程仓库地址改变，重新关联远程仓库地址
+```bash
+git remote set-url origin newremote
 ```

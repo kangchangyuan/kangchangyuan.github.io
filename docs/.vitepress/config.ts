@@ -32,6 +32,11 @@ export default defineConfig({
         {text:'Ubuntu',link:'/Notes/Ubuntu'},
       ]
     },
-    outline:3
+    outline:3,
+    algolia: {
+      appId: 'ZCI8ZDI5KR',
+      apiKey: 'e8fa50e206c6a73ba44cbab4fb411a48',
+      indexName: 'prod_penguin'
+    }
   }
 })

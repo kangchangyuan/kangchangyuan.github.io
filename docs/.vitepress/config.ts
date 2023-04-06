@@ -34,9 +34,9 @@ export default defineConfig({
     },
     outline:3,
     algolia: {
-      appId: 'ZCI8ZDI5KR',
-      apiKey: 'e8fa50e206c6a73ba44cbab4fb411a48',
-      indexName: 'prod_penguin'
+      appId: 'RKKU9SW8SZ',
+      apiKey: 'd0794b31f305227f9ad6b74ef675a180',
+      indexName: 'kangchangyuanio'
     }
   }
 })

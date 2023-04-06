@@ -1,21 +1,11 @@
-# JavaScript Note
+# Utils Note
 
-### 正则
-
-- 车牌
-```js
-const province = '京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领'
-const licensePlate = /^[province][A-Z][A-HJ-NP-Z0-9]{4,5}[A-HJ-NP-Z0-9挂学警港澳]{0,1}$/
-```
-
-### 工具函数
-
-- 睡眠延迟
+### 睡眠延迟
 ```js
 const sleep = time => new Promise(resolve=> setTimeout(resolve,time))
 ```
 
-- 获取树形结构父节点
+### 获取树形结构父节点
 ```js
 const getPathId = (tree, id) => {
   if (!isArray(tree)) return
@@ -36,22 +26,7 @@ const getPathId = (tree, id) => {
 }
 ```
 
-- 表单提交前后数据对比
-```js
-// transform loadsh 方法
-const updateDiff = (update: any, original: any) => {
-  const excludeKey = ['created_at', 'updated_at', 'deleted_at']
-  const diff = (update: any, original: any) =>
-    transform(update, (result: any, value, key: any) => {
-      if (!excludeKey.includes(key) && !isEqual(value, original[key])) {
-        result[key] = isObject(value) && isObject(original[key]) ? diff(value, original[key]) : value
-      }
-    })
-  return diff(update, original)
-}
-```
-
-- uuid
+### uuid
 ```js
 const uuid = () => {
   const tempUrl = URL.createObjectURL(new Blob())
@@ -61,7 +36,7 @@ const uuid = () => {
 }
 ```
 
-- 金额数字转大写
+### 金额数字转大写
 ```js
 const numToCapital = (amount) => {
   // 当传入的金额没有经过科学计算保留两位小数的话，则用四舍五入进行处理
@@ -95,9 +70,11 @@ const numToCapital = (amount) => {
 }
 ```
 
-- 获取文件名和扩展名
+### 获取文件名和扩展名
 ```js
+// xxx.xlsx
 const getFileName = (str) => str.substring(0, str.lastIndexOf('.'));
-
+// xxx
 const getExtension = (str) => str.substring(str.lastIndexOf('.') + 1);
+// xlsx
 ```

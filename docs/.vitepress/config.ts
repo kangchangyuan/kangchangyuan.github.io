@@ -27,7 +27,8 @@ export default defineConfig({
     sidebar:{
       '/Notes/':[
         {text:'Git Note',link:'/Notes/Git'},
-        {text:'JavaScript Note',link:'/Notes/JavaScript'},
+        {text:'Regular Note',link:'/Notes/Regular'},
+        {text:'Utils Note',link:'/Notes/Utils'},
         {text:'SSH KEY',link:'/Notes/SSHKEY'},
         {text:'Ubuntu',link:'/Notes/Ubuntu'},
       ]

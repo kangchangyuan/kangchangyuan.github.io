@@ -16,14 +16,14 @@ hero:
       text: view on GitHub
       link: https://github.com/kangchangyuan
       
-# features:
-#   - icon: 📓
-#     title: Notes
-#     details: Personal Notes
-#   - icon: 🛸
-#     title: Frontend
-#     details: Ts、Js、Vue、uniapp
-#   - icon: 🏗️
-#     title: Backend
-#     details: Express、MySQL、SQL
+features:
+  - icon: 📓
+    title: Notes
+    details: Personal Notes
+  - icon: 🛸
+    title: Frontend
+    details: Ts、Js、Vue、uniapp
+  - icon: 🏗️
+    title: Backend
+    details: Express、MySQL、SQL
 ---

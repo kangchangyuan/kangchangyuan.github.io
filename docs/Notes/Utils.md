@@ -28,12 +28,7 @@ const getPathId = (tree, id) => {
 
 ### uuid
 ```js
-const uuid = () => {
-  const tempUrl = URL.createObjectURL(new Blob())
-  const uuid = tempUrl.toString()
-  URL.revokeObjectURL(tempUrl)
-  return uuid.substr(uuid.lastIndexOf("/") + 1)
-}
+const uuid = () => window.crypto.randomUUID()
 ```
 
 ### 金额数字转大写

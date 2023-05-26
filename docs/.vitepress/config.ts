@@ -31,6 +31,7 @@ export default defineConfig({
         {text:'Utils Note',link:'/Notes/Utils'},
         {text:'SSH KEY',link:'/Notes/SSHKEY'},
         {text:'Ubuntu',link:'/Notes/Ubuntu'},
+        {text:'Type Note',link:'/Notes/Type'},
       ]
     },
     outline:3,

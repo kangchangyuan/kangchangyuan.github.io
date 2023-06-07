@@ -73,3 +73,12 @@ const getFileName = (str) => str.substring(0, str.lastIndexOf('.'));
 const getExtension = (str) => str.substring(str.lastIndexOf('.') + 1);
 // xlsx
 ```
+
+### 倒计时
+```js
+const countDown = (n) => {
+  let t = setTimeout(() => {
+    n ? countDown(--n) : clearTimeout(t);
+  }, 1000);
+};
+```

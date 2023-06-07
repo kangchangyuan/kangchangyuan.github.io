@@ -35,10 +35,8 @@ export default defineConfig({
       ]
     },
     outline:3,
-    algolia: {
-      appId: 'RKKU9SW8SZ',
-      apiKey: 'd0794b31f305227f9ad6b74ef675a180',
-      indexName: 'kangchangyuanio'
+    search:{
+      provider:'local'
     }
   }
 })

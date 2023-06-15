@@ -22,19 +22,36 @@ export default defineConfig({
       {
         text: "Backend",
         activeMatch: "/Backend/",
-        items: [{ text: "SQL", link: "/Backend/SQL/SqlBase" }],
+        items: [
+          { text: "SQL", link: "/Backend/SQL/Base" },
+          { text: "MySQL", link: "/Backend/MySQL/Command" },
+        ],
       },
     ],
     sidebar: {
       "/Notes/": [
-        { text: "Git Note", link: "/Notes/Git" },
-        { text: "Regular Note", link: "/Notes/Regular" },
-        { text: "Utils Note", link: "/Notes/Utils" },
+        { text: "Git", link: "/Notes/Git" },
+        { text: "Regular", link: "/Notes/Regular" },
+        { text: "Utils", link: "/Notes/Utils" },
         { text: "SSH KEY", link: "/Notes/SSHKEY" },
         { text: "Ubuntu", link: "/Notes/Ubuntu" },
-        { text: "Type Note", link: "/Notes/Type" },
       ],
-      "/Backend/": [{ text: "SQL BASE", link: "/Backend/SQL/SqlBase" }],
+      "/Backend/": [
+        {
+          text: "SQL",
+          items: [
+            { text: "Base", link: "/Backend/SQL/Base" },
+            { text: "Fun", link: "/Backend/SQL/Fun" },
+          ],
+        },
+        {
+          text: "MySQL",
+          items: [
+            { text: "Command", link: "/Backend/MySQL/Command" },
+            { text: "Install", link: "/Backend/MySQL/Install" },
+          ],
+        },
+      ],
     },
     outline: 3,
     search: {

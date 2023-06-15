@@ -6,6 +6,7 @@
 - 放弃本条 sql，后面不需要写; 使用\c 结束
 - 对应 sql 语句的书写查询大写小写都可以
 - 推荐使用 utf8mb4 适应表情符号等字符，兼容 utf8
+- 3个字节代表1个中文或数字
 
 ### 数据库
 
@@ -61,9 +62,7 @@ create table newTable like oldTable;
 create table newTable select * from oldTable;
 ```
 
-### 数据增删改查
-
-- 查询数据
+### 数据查询
 
 ```sql
 -- 查出表中的所有字段
@@ -83,7 +82,7 @@ select * tableName where status between 1 and 3;
 select * tableName limit 0,5;
 ```
 
-- 插入数据
+### 数据插入
 
 ```sql
 -- 单条数据插入
@@ -100,26 +99,28 @@ insert into tableName (nickName,address,status,age) values ('小米','长白山'
 | 3 | 小明 | 2 | 太行山 |22 |
 :::
 
-- 更新数据
+### 数据更新
 
 ```sql
 update tableName set nickName = '昵称大胖',status=2 where id = 1;
 ```
 
-- 删除
+### 数据删除
 
 ```sql
 delete from tableName where id = 1;
 ```
 
-- 排序
+### 数据排序
 
 ```sql
 -- asc 升序 desc 降序
 select * from tableName order by age asc, status desc;
 ```
 
-- 分组
+### 数据分组
+
+> 分组中的\* 代表的是当前行，分组之后在查询使用 having:joy:
 
 ```sql
 -- 要group by 某个字段，在select 中必须要选择这个字段
@@ -135,13 +136,18 @@ select * from tableName group by address;
 | address | num |
 | :---: | :---: |
 | 长白山 | 2 |
-太行山 | 1 |
-:::
-::: warning
-分组中的\* 代表的是当前行，分组之后在查询使用 having
+| 太行山 | 1 |
 :::
 
-<!-- - 查询数据
+### 数据去重
+
 ```sql
+select distinct address from tableName;
+```
 
-``` -->
+::: details 结果
+| address |
+| :---: |
+| 长白山 |
+| 太行山 |
+:::

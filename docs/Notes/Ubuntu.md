@@ -24,6 +24,12 @@ rm -rf filename
 
 ### WSL2
 wsl2 和 Windows 主机的网络互通而且 IP 地址设置
+
+```bash
+# git 代理配置
+git config --global https.https://github.com.proxy socks5://127.0.0.1:{port}
+```
+
 ```bash
 # 在C:\Users\username\.wslconfig
 [experimental]

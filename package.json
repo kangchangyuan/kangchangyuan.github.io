@@ -11,15 +11,9 @@
   "keywords": [],
   "author": "kangchangyuan",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
-    "vitepress": "1.0.0-beta.1",
-    "vue": "^3.2.47"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search"
-      ]
-    }
+    "vitepress": "1.0.0-rc.35",
+    "vue": "^3.3.11"
   }
 }

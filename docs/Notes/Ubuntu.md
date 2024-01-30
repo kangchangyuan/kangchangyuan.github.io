@@ -14,10 +14,22 @@ sudo apt upgrade
 
 ### 常用命令
 
-- 删除 -r 表示递归删除文件夹
+删除 -r 表示递归删除文件夹
 ```bash
 # 删除文件
 rm -f filename
 # 删除文件夹
 rm -rf filename
+```
+
+### 软件安装
+
+```bash
+sudo apt install curl
+```
+nvm
+```bash
+```
+mysql
+```bash
 ```

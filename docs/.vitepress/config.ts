@@ -13,8 +13,9 @@ export default defineConfig({
       { text: "Notes", link: "/Notes/Git", activeMatch: "/Notes/" },
       {
         text: "Frontend",
+        activeMatch: "/Frontend/",
         items: [
-          { text: "TypeScript", link: "/Frontend/TypeScript" },
+          { text: "DesignPattern", link: "/Frontend/DesignPattern/Factory" },
           { text: "JavaScript", link: "/Frontend/JavaScript" },
           { text: "Vue", link: "/Frontend/Vue" },
         ],
@@ -35,6 +36,16 @@ export default defineConfig({
         { text: "Utils", link: "/Notes/Utils" },
         { text: "SSH KEY", link: "/Notes/SSHKEY" },
         { text: "Ubuntu", link: "/Notes/Ubuntu" },
+        { text: "ToDo", link: "/Notes/ToDo" },
+      ],
+      "/Frontend/": [
+        {
+          text: "DesignPattern",
+          items: [
+            { text: "Factory", link: "/Frontend/DesignPattern/Factory" },
+          ],
+        },
+        
       ],
       "/Backend/": [
         {

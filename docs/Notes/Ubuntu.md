@@ -22,14 +22,13 @@ rm -f filename
 rm -rf filename
 ```
 
-### 软件安装
-
+### WSL2
+wsl2 和 Windows 主机的网络互通而且 IP 地址设置
 ```bash
-sudo apt install curl
-```
-nvm
-```bash
-```
-mysql
-```bash
+# 在C:\Users\username\.wslconfig
+[experimental]
+networkingMode=mirrored
+dnsTunneling=true
+firewall=true
+autoProxy=true
 ```

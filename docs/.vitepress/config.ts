@@ -36,7 +36,6 @@ export default defineConfig({
         { text: "Utils", link: "/Notes/Utils" },
         { text: "SSH KEY", link: "/Notes/SSHKEY" },
         { text: "Ubuntu", link: "/Notes/Ubuntu" },
-        { text: "ToDo", link: "/Notes/ToDo" },
       ],
       "/Frontend/": [
         {

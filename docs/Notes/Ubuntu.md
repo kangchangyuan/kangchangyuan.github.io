@@ -20,21 +20,17 @@ sudo apt upgrade
 rm -f filename
 # 删除文件夹
 rm -rf filename
+# 新建文件夹
+mkdir filename
 ```
 
-### WSL2
+### WSL2配置
 wsl2 和 Windows 主机的网络互通而且 IP 地址设置
 
 ```bash
-# git 代理配置
-git config --global https.https://github.com.proxy socks5://127.0.0.1:{port}
-```
-
-```bash
 # 在C:\Users\username\.wslconfig
-[experimental]
-networkingMode=mirrored
-dnsTunneling=true
-firewall=true
-autoProxy=true
+[wsl2]
+memory=2GB 
+processors=4
+swap=4GB
 ```
